@@ -14,7 +14,7 @@ body{
 /* BG Image */
 .bg-1{
     position: absolute;
-    filter: brightness(0.9);
+    filter: brightness(1);
     background-image: url("Images/BG24.png");
     background-color: rgb(81,218,76);
     opacity: 1;
@@ -47,6 +47,8 @@ display: none;
     width: 140px;
     margin: auto;
     padding: 10px;
+    filter: shadow(color=white, direction=135);
+
 }
 .hack-logo{
     display: block;
@@ -384,7 +386,7 @@ display: none;
 
 
 .footer-text{
-    color: black;
+    color: rgb(245, 245, 245);
     margin-top: -6px;
     text-align: center;
      font-family: "Space Grotesk", sans-serif;
