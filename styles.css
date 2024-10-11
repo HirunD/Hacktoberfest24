@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+* {
+    margin: 0;
+    max-width: 1440px;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(19, 0, 36);
+    overflow-y: hidden;
+    overflow: hidden;
+}
+
+/* BG Image */
+.bg-1{
+    position: absolute;
+    filter: brightness(0.9);
+    background-image: url("Images/BG24.png");
+    background-color: rgb(81,218,76);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: repeat;
+    background-repeat: repeat-y;
+}
+
+.bg-2{
+    position: absolute;
+    filter: brightness(0.4) sepia(1) hue-rotate(205deg) saturate(8);
+    /* background-image: url("https://hacktoberfest.com/_next/static/media/grid-square.7c0cbc15.svg"); */
+    background-color: rgb(81,218,76);
+display: none;
+    opacity: 0.15;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+    background-size: fill;
+}
+
+/* Logos */
+
+.school-logos{
+    position: relative;
+    display: block;
+    width: 140px;
+    margin: auto;
+    padding: 10px;
+}
+.hack-logo{
+    display: block;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+/* CLI Box */
+
+.box{
+    display: block;
+    margin:auto;
+    width: 110vh;
+    padding-top: 30px;
+    border-left: #00f2ff 5px;
+}
+
+/* title */
+
+.cli-line{
+    color: black;
+    font-weight: 300;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    font-size: 100%;
+    overflow-wrap: break-word;
+}
+
+.line1{
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    font-size: 100%;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title1{
+    animation: typewriter 2s steps(18) 0.3s 1 normal both,
+    opacity 01s ease-in-out infinite normal,
+    blinkTextCursor 01s  steps(25) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 1.5s forwards;
+}
+
+.line2{
+    margin-top: 20px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title2{
+    animation: typewriter 2s steps(30) 2.5s 1 normal both,
+    border-opacity-in 2s 2.0s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 6.0s forwards;
+}
+
+.line3{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    background-image:-webkit-linear-gradient(52deg, #f4de7d,#7fe3e8, #8d97fe);
+    background-color: black;
+    -webkit-background-clip: text;
+    display: none;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title3{
+    animation: opacity-in 2s 6.8s normal,
+    border-opacity-in 2s 6.8s forwards,
+    opacity 01s  ease-in-out infinite normal,
+}
+
+.line4{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title4{
+    animation: typewriter4 2s steps(40) 9s 1 normal both,
+    border-opacity-in 2s 9s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 11s forwards;
+}
+
+.line5{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    background-image:-webkit-linear-gradient(52deg, #f4de7d,#7fe3e8, #8d97fe);
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    display: none;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title5{
+    animation: opacity-in 2s 6.8s normal,
+    border-opacity-in 2s 6.8s forwards,
+    opacity 01s  ease-in-out infinite normal,
+}
+
+.line-dash{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    background-image:-webkit-linear-gradient(52deg, #f4de7d,#7fe3e8, #8d97fe);
+    -webkit-background-clip: text;
+    display: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.line6{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title6{
+    animation: typewriter6 2s steps(40) 13.8s 1 normal both,
+    border-opacity-in 2s 13.8s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 15.2s forwards;
+}
+
+.line7{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title7{
+    animation: typewriter7 2s steps(40) 16s 1 normal both,
+    border-opacity-in 2s 16s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 17.5s forwards;
+}
+
+.line8{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title8{
+    animation: typewriter8 2s steps(40) 18.1s 1 normal both,
+    border-opacity-in 2s 18.1s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 20.2s forwards;
+}
+
+.line9{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title9{
+    animation: typewriter9 2s steps(40) 21.3s 1 normal both,
+    border-opacity-in 2s 21.3s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 22.3s forwards;
+}
+
+.line10{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title10{
+    animation: typewriter10 2s steps(40) 23.4s 1 normal both,
+    border-opacity-in 2s 23.4s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 25.4s forwards;
+}
+
+.line11{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title11{
+    animation: typewriter11 2s steps(40) 26.4s 1 normal both,
+    border-opacity-in 2s 26.4s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 28.4s forwards;
+}
+
+.line12{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title12{
+    animation: typewriter12 2s steps(40) 32.5s 1 normal both,
+    border-opacity-in 2s 32.5s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 34s forwards;
+}
+
+.line13{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    background-image:-webkit-linear-gradient(52deg, #f4de7d,#7fe3e8, #8d97fe);
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    display: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title14{
+    animation: typewriter14 2s steps(40) 21.3s 1 normal both,
+    border-opacity-in 2s 21.3s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    /* glow 1s ease-in-out infinite alternate, */
+    border-opacity-out 2s 22.3s forwards;
+}
+
+.line14{
+    margin-top: 10px;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: black;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+
+.footer-text{
+    color: black;
+    margin-top: -6px;
+    text-align: center;
+     font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    font-size: 80%;
+}
+
+#btn{
+    color: transparent;
+    background-color: none;
+    border: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 920px) {
+    .box{
+        font-size: 90%;
+        width: 80%;
+    }
+    .typewriter-title10{
+        animation: typewriter13 2s steps(40) 23.4s 1 normal both,
+        border-opacity-in 2s 23.4s forwards,
+        blinkTextCursor 500ms steps(40) infinite normal,
+        /* glow 1s ease-in-out infinite alternate, */
+        border-opacity-out 2s 25.4s forwards;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .box{
+        font-size: 90%;
+        width: 90%;
+    }
+    .typewriter-title10{
+        animation: typewriter13 2s steps(40) 23.4s 1 normal both,
+        border-opacity-in 2s 23.4s forwards,
+        blinkTextCursor 500ms steps(40) infinite normal,
+        /* glow 1s ease-in-out infinite alternate, */
+        border-opacity-out 2s 25.4s forwards;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hack-logo{
+        width: 200px;
+    }
+    .box{
+        width: 90%;
+        font-size: 80%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hack-logo{
+        width: 200px;
+    }
+    .box{
+        width: 90%;
+        font-size: 70%
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .hack-logo{
+        width: 150px;
+    }
+    .box{
+        width: 90%;
+        font-size: 60%;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hack-logo{
+        width: 140px;
+    }
+    .box{
+        width: 90%;
+        font-size: 50%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hack-logo{
+        width: 130px;
+    }
+    .box{
+        width: 95%;
+        font-size: 50%
+    }
+
+    .typewriter-title10{
+        animation: typewriter15 2s steps(40) 23.4s 1 normal both,
+        border-opacity-in 2s 23.4s forwards,
+        blinkTextCursor 500ms steps(40) infinite normal,
+        /* glow 1s ease-in-out infinite alternate, */
+        border-opacity-out 2s 25.4s forwards;
+    }
+}
+    
+
+
+
+
+
+/* Keyframes */
+
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 15.1em;
+    }
+}
+
+@keyframes typewriter3 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 19.1em;
+    }
+}
+
+@keyframes typewriter4 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 24em;
+    }
+}
+
+@keyframes typewriter6 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 18.1em;
+    }
+}
+
+@keyframes typewriter7 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 14.1em;
+    }
+}
+
+@keyframes typewriter8 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 26.1em;
+    }
+}
+
+@keyframes typewriter9 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 100%;
+    }
+}
+
+@keyframes typewriter10 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 80%;
+    }
+}
+
+@keyframes typewriter11 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 28em;
+    }
+}
+
+@keyframes typewriter12 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 18em;
+    }
+}
+
+@keyframes typewriter13 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 89%;
+    }
+}
+
+@keyframes typewriter14 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 20em;
+    }
+}
+
+@keyframes typewriter15 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 75.3%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.138), 0 0 2px rgba(255, 255, 255, 0.11), 0 0 2px #ffffff11, 0 0 2px #ffffff21, 0 0 2px #ffffff1f, 0 0 2px #ffffff, 0 0 2px #ffffff24;
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0);
+    }
+  }
+
+@keyframes opacity{
+    from{
+        opacity: 100;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes opacity-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+
+@keyframes border-opacity-in{
+    from{
+        border-right: none;
+    }
+    to{
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+    }
+}
+
+@keyframes border-opacity-out{
+    from{
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right: none;
+    }
+}
+
