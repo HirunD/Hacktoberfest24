@@ -150,9 +150,9 @@ setTimeout(() => {
 
 function myFunction2(x) {
     if (x.matches) { // If media query matches
-        document.getElementById('line9').innerHTML='&gt&gt It is with honor that we invite you to "Hacktoberfest 22",'
+        document.getElementById('line9').innerHTML='&gt&gt It is with honor that we invite you to "Hacktoberfest 24",'
     } else {
-        document.getElementById('line9').innerHTML='&gt&gt It is with honor that we invite you to "Hacktoberfest 22", Organized by'
+        document.getElementById('line9').innerHTML='&gt&gt It is with honor that we invite you to "Hacktoberfest 24", Organized by'
     }
   }
   
